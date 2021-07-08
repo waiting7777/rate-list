@@ -2,7 +2,7 @@
   <div :class="[mode]">
     <Header />
     <v-app>
-      <div class="leading-relaxed tracking-wide bg-white text-black dark:bg-gray-900 dark:text-white min-h-screen">
+      <div class="leading-relaxed tracking-wide bg-white text-black dark:bg-gray-dark dark:text-white min-h-screen">
         <nuxt />
       </div>
     </v-app>

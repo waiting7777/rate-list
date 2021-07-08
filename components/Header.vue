@@ -1,11 +1,11 @@
 <template>
-  <div class="header sticky w-full bg-white top-0 border-b border-gray-300 dark:bg-gray-900 z-50">
+  <div class="header sticky w-full bg-white top-0 border-b border-gray-300 dark:bg-gray-dark z-50">
     <div class="h-12 flex items-center p-6 text-black dark:text-white">
       <div class="w-full mx-auto">
         <div class="flex items-center">
           <nuxt-link to="/">
             <div class="flex items-center">
-              <Icon icon="Logo" class="fill-current" />
+              <Icon icon="Logo" class="fill-current w-6" />
               <div class="ml-2 font-bold text-lg">RATES LIST</div>
             </div>
           </nuxt-link>

@@ -83,19 +83,26 @@ export default {
 
 <style lang="scss" scoped>
 ::v-deep {
-  .v-data-footer {
-    flex-wrap: nowrap;
+  .v-data-table > .v-data-table__wrapper > table > tbody > tr > td, .v-data-table > .v-data-table__wrapper > table > thead > tr > td, .v-data-table > .v-data-table__wrapper > table > tfoot > tr > td:nth-child(1) {
+    font-weight: bold;
   }
-  .v-data-footer__select {
-    .v-input {
-      margin-left: 18px;
+  .theme--dark.v-data-table {
+    border: rgba(255, 255, 255, 0.2) 1px solid;
+  }
+  @media screen and (max-width: 768px) {
+    
+   .v-data-footer {
+      flex-wrap: nowrap;
     }
+    .v-data-footer__select {
+      margin-right: 4px;
+      .v-input {
+        margin-left: 18px;
+      }
+    }
+    .v-data-footer__pagination {
+      margin: 0 12px;
+    } 
   }
-  .v-data-footer__pagination {
-    margin: 0 12px;
-  }
-}
-.v-data-table-header {
-  @apply bg-gray-200;
 }
 </style>

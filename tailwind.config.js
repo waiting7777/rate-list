@@ -1,3 +1,12 @@
 module.exports = {
-  darkMode: 'class'
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        gray: { 
+          dark: '#181A20'
+        }
+      }
+    }
+  }
 }
