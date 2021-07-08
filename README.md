@@ -4,7 +4,8 @@ Tech stack Vue / Nuxt / Tailwindcss / Vuetify for table.
 
 Have loading, error status
 
-And Light / Dark mode!
+**Light / Dark mode!!**
+**Crypto Icons!!**
 ## Setup
 
 ```bash

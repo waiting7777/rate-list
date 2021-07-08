@@ -7,11 +7,17 @@
         :items="rates"
         :items-per-page="10"
         item-key="name"
-        show-select
+        :show-select="false"
         :loading="loading"
         class="elevation-1"
         :dark="mode == 'dark'"
     >
+      <template v-slot:item.name="{ item }">
+        <div class="flex items-center">
+          <cryptoicon v-if="item.type == 'crypto'" :symbol="item.unit" size="24" class="mr-3" /> 
+          {{ item.name }}
+        </div>
+      </template>
       <template v-slot:item.type="{ item }">
         <Type :text="item.type" />
       </template>
